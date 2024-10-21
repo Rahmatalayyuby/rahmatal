@@ -1,0 +1,159 @@
+/* Mengatur font dan margin */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Warna biru laut lembut */
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* Keyframes untuk animasi fade-in */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Header dengan gradasi lebih menarik */
+header {
+    background-color: coral;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-100px);
+    animation: slideDown 1.2s ease-out forwards;
+}
+
+/* Keyframes untuk animasi slide-down */
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Navigasi dengan transisi lebih halus */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Keyframes untuk fade-in-up */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px; /* Menambahkan radius lebih besar untuk bentuk bulat */
+    background-color: rgba(255, 255, 255, 0.2); /* Membuat latar belakang lebih transparan */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1); /* Efek zoom saat di hover */
+}
+
+/* Konten dengan tampilan lebih modern */
+section {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #e3f2fd; /* Warna biru pastel */
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    animation-delay: 0.7s;
+}
+
+/* Desain container */
+.container {
+    max-width: 850px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Animasi tombol lebih hidup */
+button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px; /* Mengubah bentuk tombol menjadi lebih bulat */
+    cursor: pointer;
+    font-size: 1em; /* Menambahkan ukuran font untuk tombol */
+    font-weight: bold; /* Menambahkan ketebalan font */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #156fbd;
+    transform: translateY(-5px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Menu item dengan efek hover */
+.menu-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Efek zoom saat di hover */
+}
+
+.menu-item img {
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease; /* Menambahkan transisi untuk gambar */
+}
+
+.menu-item img:hover {
+    transform: scale(1.1); /* Efek zoom pada gambar saat di hover */
+}
+
+/* Animasi tabel */
+.table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.8s;
+}
+
+h5 {
+    text-align: center;
+    font-weight: bold; /* Menambahkan ketebalan font untuk judul */
+    margin-top: 20px; /* Menambahkan jarak atas pada judul */
+}

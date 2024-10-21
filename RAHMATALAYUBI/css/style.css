@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Mengatur font yang dipakai dan background halaman */
+body {
+    font-family: 'Arial', sans-serif; /* Font yang lebih modern */
+    margin: 0;
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Background gradien yang cerah */
+    color: #333; /* Warna teks default */
+}
+
+/* Container utama dengan layout flexbox */
+.container {
+    display: flex;
+    flex-direction: row; /* Mengatur agar konten utama dan sidebar berdampingan */
+    min-height: 100vh;
+}
+
+/* Header dengan logo dan nama institusi */
+.header {
+    background-color: #007BFF; /* Warna biru yang cerah */
+    color: #fff;
+    padding: 20px; /* Padding yang lebih besar untuk ruang */
+    text-align: center;
+    font-size: 28px; /* Ukuran font lebih besar */
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan yang lebih jelas */
+    border-bottom: 5px solid #0056b3; /* Garis bawah */
+}
+
+/* Logo di header */
+.header img {
+    width: 60px; /* Ukuran logo */
+    margin-bottom: 10px; /* Jarak antara logo dan teks */
+}
+
+/* Sidebar navigasi */
+.sidebar {
+    background-color: #0056b3; /* Warna sidebar yang lebih cerah */
+    width: 250px;
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Bayangan pada sidebar */
+    transition: background-color 0.3s ease; /* Efek transisi pada sidebar */
+}
+
+.sidebar:hover {
+    background-color: #004494; /* Warna sidebar saat hover */
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    margin-bottom: 15px; /* Jarak antar link */
+    border-radius: 8px; /* Sudut melengkung */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efek transisi */
+}
+
+.sidebar a:hover {
+    background-color: #0069d9; /* Warna saat hover */
+    transform: translateY(-2px); /* Efek mengangkat saat hover */
+}
+
+/* Konten utama dengan margin dari sidebar */
+.main-content {
+    margin-left: 260px; /* Jarak dari sidebar */
+    padding: 20px;
+    flex-grow: 1; /* Membiarkan konten utama tumbuh */
+    transition: margin-left 0.3s ease; /* Efek transisi untuk konten utama */
+}
+
+/* Kotak form login */
+.login-box {
+    margin-top: 50px; /* Jarak dari atas */
+    background: #ffffff; /* Warna putih */
+    padding: 30px; /* Padding */
+    border-radius: 12px; /* Sudut melengkung */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih besar */
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Judul form dengan border bawah */
+.login-box h2 {
+    border-bottom: 2px solid #007BFF; /* Garis bawah berwarna biru cerah */
+    color: #0056b3; /* Warna judul */
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 25px; /* Jarak bawah */
+    font-size: 24px; /* Ukuran font yang lebih besar */
+}
+
+/* Input dan select agar tampilannya memenuhi container */
+input, select {
+    width: 100%;
+    padding: 12px; /* Padding lebih besar */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Sudut melengkung */
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Transisi pada border */
+}
+
+input:focus, select:focus {
+    border-color: #007BFF; /* Border berubah warna saat focus */
+}
+
+/* Tombol submit dengan warna resmi */
+input[type=submit] {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 12px; /* Padding yang lebih besar */
+    font-size: 18px; /* Ukuran font yang lebih besar */
+    cursor: pointer;
+    border-radius: 8px; /* Sudut melengkung */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi halus */
+}
+
+input[type=submit]:hover {
+    background-color: #0069d9; /* Warna lebih gelap saat hover */
+    transform: translateY(-2px); /* Efek mengangkat saat hover */
+}
+
+/* Footer dengan teks di bagian bawah halaman */
+.footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Bayangan pada footer */
+    margin-top: auto; /* Memastikan footer berada di bawah */
+    transition: background-color 0.3s ease; /* Transisi halus pada footer */
+}
+
+.footer:hover {
+    background-color: #004494; /* Warna lebih gelap saat hover */
+}
